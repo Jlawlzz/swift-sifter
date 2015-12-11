@@ -12,7 +12,7 @@ class SwiftSifter
 
   def clean_words_or_die
     @lyrics = lyrics.gsub(/\n/, " ")
-    @lyrics = lyrics.gsub(/[\"\.\?\:\,]/, "")
+    @lyrics = lyrics.gsub(/[\"\.\?\:\,\(\)]/, "")
   end
 
   def do_lyric_stuff
